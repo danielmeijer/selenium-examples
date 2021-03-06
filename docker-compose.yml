@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+   selenium:
+      build: .
+      volumes: 
+         - "./output/:/usr/src/app/output"
+      environment: 
+         - scrape_url=https://google.com
+         #- resolution="1920, 1080"
